@@ -1,0 +1,141 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-03T15:43:39.928Z",
+    "end": "2021-10-03T15:44:05.261Z",
+    "duration": 25333,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8067c8bc-a735-460f-a531-a9dcdc16d013",
+      "title": "",
+      "fullFile": "cypress/integration/examples/BDD/ToolsQA.feature",
+      "file": "cypress/integration/examples/BDD/ToolsQA.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b47a2c3d-cf90-4f44-8256-5e50bef1afec",
+          "title": "Tools QA Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "User has to login tools QA",
+              "fullTitle": "Tools QA Login User has to login tools QA",
+              "timedOut": null,
+              "duration": 8332,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "aecced57-d67c-4008-ae5d-257c990814c7",
+              "parentUUID": "b47a2c3d-cf90-4f44-8256-5e50bef1afec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search for T-shirt",
+              "fullTitle": "Tools QA Login Search for T-shirt",
+              "timedOut": null,
+              "duration": 5095,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click",
+                "estack": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (http://shop.demoqa.com/__cypress/runner/cypress_runner.js:149801:76)\n    at Context.click (http://shop.demoqa.com/__cypress/runner/cypress_runner.js:149980:14)\n    at Context.<anonymous> (http://shop.demoqa.com/__cypress/runner/cypress_runner.js:169857:23)\nFrom Your Spec Code:\n    at Context.eval (http://shop.demoqa.com/__cypress/tests?p=cypress/integration/examples/BDD/ToolsQA.feature:80:21)\n    at Context.resolveAndRunStepDefinition (http://shop.demoqa.com/__cypress/tests?p=cypress/integration/examples/BDD/ToolsQA.feature:12385:29)\n    at Context.eval (http://shop.demoqa.com/__cypress/tests?p=cypress/integration/examples/BDD/ToolsQA.feature:11730:35)",
+                "diff": null
+              },
+              "uuid": "087c11a7-03be-44d2-bd9e-ce4f6e88ee7c",
+              "parentUUID": "b47a2c3d-cf90-4f44-8256-5e50bef1afec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add T-shirt to cart",
+              "fullTitle": "Tools QA Login Add T-shirt to cart",
+              "timedOut": null,
+              "duration": 194,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "d3f1a1e2-b17e-4aa3-a5c6-af35dc52e8d1",
+              "parentUUID": "b47a2c3d-cf90-4f44-8256-5e50bef1afec",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aecced57-d67c-4008-ae5d-257c990814c7",
+            "d3f1a1e2-b17e-4aa3-a5c6-af35dc52e8d1"
+          ],
+          "failures": [
+            "087c11a7-03be-44d2-bd9e-ce4f6e88ee7c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 13621,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "useInlineDiffs": false
+      },
+      "version": "4.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "4.0.1"
+    }
+  }
+}

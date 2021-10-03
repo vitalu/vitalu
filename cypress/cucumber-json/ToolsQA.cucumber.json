@@ -1,0 +1,130 @@
+[
+  {
+    "description": "    Shop tools QA Register and Login",
+    "keyword": "Feature",
+    "name": "Tools QA Login",
+    "line": 1,
+    "id": "tools-qa-login",
+    "tags": [],
+    "uri": "ToolsQA.feature",
+    "elements": [
+      {
+        "id": "tools-qa-login;user-has-to-login-tools-qa",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "User has to login tools QA",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open shop tools QA page",
+            "result": {
+              "status": "passed",
+              "duration": 6277000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "cypressbdd@hotlook.com",
+                      "cypressbdd@hotlook.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I enter usernaem and password",
+            "result": {
+              "status": "passed",
+              "duration": 3456000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tools-qa-login;search-for-t-shirt",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Search for T-shirt",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I click search for T-shirt",
+            "result": {
+              "status": "passed",
+              "duration": 3623000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I validate catlog",
+            "result": {
+              "status": "passed",
+              "duration": 44000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I select size",
+            "result": {
+              "status": "passed",
+              "duration": 2556000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I select color",
+            "result": {
+              "status": "passed",
+              "duration": 455000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I select tshirt which contains tag sales",
+            "result": {
+              "status": "failed",
+              "duration": 82000000,
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 3 elements. Pass `{ multiple: true }` if you want to serially click each element.\n    at mouseAction (http://shop.demoqa.com/__cypress/runner/cypress_runner.js:149801:76)\n    at Context.click (http://shop.demoqa.com/__cypress/runner/cypress_runner.js:149980:14)\n    at Context.<anonymous> (http://shop.demoqa.com/__cypress/runner/cypress_runner.js:169857:23)\nFrom Your Spec Code:\n    at Context.eval (http://shop.demoqa.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ToolsQA.feature:80:21)\n    at Context.resolveAndRunStepDefinition (http://shop.demoqa.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ToolsQA.feature:12385:29)\n    at Context.eval (http://shop.demoqa.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ToolsQA.feature:11730:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "tools-qa-login;add-t-shirt-to-cart",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Add T-shirt to cart",
+        "tags": [],
+        "type": "scenario",
+        "steps": []
+      }
+    ]
+  }
+]

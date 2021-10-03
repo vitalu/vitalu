@@ -1,0 +1,61 @@
+[
+  {
+    "description": "    Here, you can add some description for the feature file. Please note that before moving to the next statement, press enter and then tab button. ",
+    "keyword": "Feature",
+    "name": "Sample feature file for the demo",
+    "line": 1,
+    "id": "sample-feature-file-for-the-demo",
+    "tags": [],
+    "uri": "example.feature",
+    "elements": [
+      {
+        "id": "sample-feature-file-for-the-demo;knoldus-website",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Knoldus Website",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "We visit knoldus Website",
+            "result": {
+              "status": "failed",
+              "duration": 50169000000,
+              "error_message": "CypressError: Timed out after waiting `30000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `30000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://www.knoldus.com/__cypress/runner/cypress_runner.js:155054:72)\n    at https://www.knoldus.com/__cypress/runner/cypress_runner.js:156091:16\n    at tryCatcher (https://www.knoldus.com/__cypress/runner/cypress_runner.js:13212:23)\n    at https://www.knoldus.com/__cypress/runner/cypress_runner.js:8334:41\n    at tryCatcher (https://www.knoldus.com/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://www.knoldus.com/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://www.knoldus.com/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://www.knoldus.com/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://www.knoldus.com/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (https://www.knoldus.com/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (https://www.knoldus.com/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.knoldus.com/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (https://www.knoldus.com/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at Context.eval (https://www.knoldus.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\example.feature:42:6)\n    at Context.resolveAndRunStepDefinition (https://www.knoldus.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\example.feature:12284:29)\n    at Context.eval (https://www.knoldus.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\example.feature:11629:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "We click on blogs and search for cypress",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Open the blog Cypress-101",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "assert",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
